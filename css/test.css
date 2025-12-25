@@ -1,3 +1,21 @@
 body {
+    .mate-sc-regular {
+  font-family: "Mate SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.im-fell-french-canon-regular {
+  font-family: "IM Fell French Canon", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.im-fell-french-canon-regular-italic {
+  font-family: "IM Fell French Canon", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
     background-color: #151014;
+
 }
