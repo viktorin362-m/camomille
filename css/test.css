@@ -6,7 +6,7 @@
 }
 
 @font-face {
-    font-family:"matessc" ;
+    font-family:"matesc" ;
     src: url("fonts\Mate SC\matesc-regular-webfont.woff2") format("woff2"), url("fonts\Mate SC\matesc-regular-webfont.woff") format("woff"), url("fonts\Mate SC\matesc-regular-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -16,21 +16,23 @@
     src: url("fonts\Kaisei_Opti (1)\KaiseiOpti-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
+}/*косяк с шрифтами(*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
 }
-
 h1 {
-  font-family: "KaiseiOpti"; /* изменить шрифт позже*/
   font-weight: 100; /* я не понимаю где это посмотреть*/
   font-size: 40px;
   line-height: 32px;
   color: #F0DDA8;
 }
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    outline: none; 
+a {
+    font-size: 20px;
+    color: #FFEDBD;
 }
 body { 
     background-color: #151014;
@@ -39,8 +41,21 @@ body {
 header {
     background-color: #312725;
     width: 100%;
+    padding: 25.5px 45px;
+}
+.header_construction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
 }
 .nav {
  display: flex;
  list-style-type: none;
+ justify-content: right; /* расположение по горизонтали*/
+ align-items: center; /* расположение по вертикали*/
+}
+.nav>li{
+    margin-left: 43px;
+    margin-right: 43px;
 }
