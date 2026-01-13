@@ -1,19 +1,23 @@
 @font-face {
     font-family:"imfellfrenchcanon" ;
-    src: url("fonts\IM_Fell_French_Canon\imfellfrenchcanon-regular-webfont.woff2") format("woff2"), url("fonts\IM_Fell_French_Canon\imfellfrenchcanon-regular-webfont.woff") format("woff"), url("fonts\IM_Fell_French_Canon\imfellfrenchcanon-regular-webfont.ttf") format("truetype");
+    src: url("fonts/imfellfrenchcanon-regular-webfont.woff2") format("woff2")
+         url("fonts/imfellfrenchcanon-regular-webfont.woff") format("woff")
+         url("fonts/imfellfrenchcanon-regular-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family:"matesc" ;
-    src: url("fonts\Mate SC\matesc-regular-webfont.woff2") format("woff2"), url("fonts\Mate SC\matesc-regular-webfont.woff") format("woff"), url("fonts\Mate SC\matesc-regular-webfont.ttf") format("truetype");
+    src: url("fonts/matesc-regular-webfont.woff2") format("woff2")
+         url("fonts/matesc-regular-webfont.woff") format("woff") 
+         url("fonts/matesc-regular-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"KaiseiOpti" ;
-    src: url("fonts\Kaisei_Opti (1)\KaiseiOpti-Regular.ttf") format("truetype");
+    src: url("fonts/Kaisei_Opti/KaiseiOpti-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }/*косяк с шрифтами(*/
@@ -25,14 +29,24 @@
   outline: none;
 }
 h1 {
+    font-family:'imfellfrenchcanon' ;
   font-weight: 100; /* я не понимаю где это посмотреть*/
   font-size: 40px;
   line-height: 32px;
   color: #F0DDA8;
 }
 a {
+    font-family:"matesc" ;
     font-size: 20px;
     color: #FFEDBD;
+    text-decoration: none;
+}
+a:hover{
+    color: #9D8A57;
+    text-decoration: underline;
+    text-decoration-color: #9D8A57;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 body { 
     background-color: #151014;
@@ -41,13 +55,16 @@ body {
 header {
     background-color: #312725;
     width: 100%;
+    height: 97px;
     padding: 25.5px 45px;
 }
 .header_construction {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 46px;
     padding: 15px 0;
+
 }
 .nav {
  display: flex;
@@ -56,6 +73,10 @@ header {
  align-items: center; /* расположение по вертикали*/
 }
 .nav>li{
-    margin-left: 43px;
-    margin-right: 43px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.divider{ 
+    color: #61584E;
+    font-size: 25px;
 }
