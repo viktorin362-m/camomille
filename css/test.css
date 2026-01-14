@@ -1,26 +1,26 @@
 @font-face {
     font-family:"imfellfrenchcanon" ;
-    src: url("fonts/imfellfrenchcanon-regular-webfont.woff2") format("woff2")
-         url("fonts/imfellfrenchcanon-regular-webfont.woff") format("woff")
-         url("fonts/imfellfrenchcanon-regular-webfont.ttf") format("truetype");
+    src: url("../fonts/imfellfrenchcanon-regular-webfont.woff2") format("woff2");
+    src: url("../fonts/imfellfrenchcanon-regular-webfont.woff") format("woff");
+    src: url("../fonts/imfellfrenchcanon-regular-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family:"matesc" ;
-    src: url("fonts/matesc-regular-webfont.woff2") format("woff2")
-         url("fonts/matesc-regular-webfont.woff") format("woff") 
-         url("fonts/matesc-regular-webfont.ttf") format("truetype");
+    src: url("../fonts/matesc-regular-webfont.woff2") format("woff2");
+    src: url("../fonts/matesc-regular-webfont.woff") format("woff"); 
+    src: url("../fonts/matesc-regular-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"KaiseiOpti" ;
-    src: url("fonts/Kaisei_Opti/KaiseiOpti-Regular.ttf") format("truetype");
+    src: url("../fonts/Kaisei_Opti/KaiseiOpti-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-}/*косяк с шрифтами(*/
+}
 * {
   margin: 0;
   padding: 0;
@@ -29,11 +29,18 @@
   outline: none;
 }
 h1 {
-    font-family:'imfellfrenchcanon' ;
+    font-family:'KaiseiOpti' ;
   font-weight: 100; /* я не понимаю где это посмотреть*/
   font-size: 40px;
   line-height: 32px;
   color: #F0DDA8;
+}
+h2 {
+    font-family: 'matesc';
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 80px;
+    color: #F9E0B8 ;
 }
 a {
     font-family:"matesc" ;
@@ -82,5 +89,11 @@ header {
 }
 .F1{
     width: 100%;
-    padding: 0 360px;
+    height: 753px;
+    padding: 194px 360px;
+    background-image: url(../img/F1.svg);/* настроить изображение*/
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
+
