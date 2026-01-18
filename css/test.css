@@ -37,7 +37,6 @@ h1 {
 }
 h2 {
     font-family: 'matesc';
-    font-weight: 100;
     font-size: 40px;
     line-height: 80px;
     color: #F9E0B8 ;
@@ -65,7 +64,7 @@ header {
     height: 97px;
     padding: 25.5px 45px;
 }
-.header_construction {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,13 +72,13 @@ header {
     padding: 15px 0;
 
 }
-.nav {
+.header-nav {
  display: flex;
  list-style-type: none;
  justify-content: right; /* расположение по горизонтали*/
  align-items: center; /* расположение по вертикали*/
 }
-.nav>li{
+.header-nav>li{
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -87,16 +86,16 @@ header {
     color: #61584E;
     font-size: 25px;
 }
-.F1{
+.introduction{
     width: 100%;
-    height: 753px;
-    padding: 194px 360px;
+    padding: 0 15px;
     background-image: url(../img/F1.svg);/* настроить изображение*/
     background-position: center top;
     background-repeat: no-repeat;
     background-size:cover;
 }
-.banner{
-    width: 468px;
+.introduction-container{
+    max-width: 1200px;
+    margin: auto;
 }
 
